@@ -18,9 +18,38 @@ $transitionAll: all 250ms ease-in-out;
     font-family: 'Sen', sans-serif;
 }
 
+
 body, html {
-    background-color: $bg-dark;
+    background-color: transparent;
     scroll-behavior: smooth;
+    background-color: $bg-dark;
+}
+
+#particles-js {
+    position: fixed;
+}
+
+.contact_data {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    top: 65vh;
+    z-index: 200;
+    margin-left: 2vw;
+    
+    
+    .vl {
+        border-left: 3px solid $f-green;
+        height: 15vh;
+        margin-left: .9vw;
+    }
+
+    svg {
+        width: 2vw;
+        margin: 1vh 0;
+        color: $f-green;
+    }
 }
 
 .navbutton-container{
@@ -70,7 +99,7 @@ body, html {
 
             &:focus, &.active{
                 &::after{
-                    background-color: $f-light;
+                    background-color: $f-green;
                 }
             }
         }
@@ -85,6 +114,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $bg-dark;
 
     .nav_links {
         &:link, &:visited {
@@ -108,32 +138,35 @@ nav{
         } 
     }
 
-    h1{
-        font-size: 2rem;
-        padding: 1rem;
-        a {
-            font-size: 2rem;
+    .logo{
+        top: 0;
+        position: relative;
+        img{
+            position: absolute;
+            width: 30vw;
+            left: -1rem;
+            transform: translateY(-50%);
         }
     }
     
     ul {
         display: flex;
         list-style: none;
-
-        
+        padding: 2rem;
     }
 }
 
 .main_content{
     position: absolute;
-    background-color: $bg-dark;
     padding: 5vw 12vw 0 12vw;
+    pointer-events: none;
 }
 
 #acerca_de{
-    padding-top: 20vh;
+    padding-top: 12vh;
     height: 100vh;
     .content__main {
+        pointer-events: all;
         color: $f-dark;
         span {
             color: $f-green;
@@ -175,6 +208,15 @@ nav{
         border: 1px solid $f-green;
         background-color: transparent;
         border-radius: 1vw;
+        pointer-events: all;
+        cursor: pointer;
+        transition: $transitionAll;
+
+        &:hover{
+            transition: $transitionAll;
+            background-color: #2A4771;
+            color: $f-green;
+        }
     }
 }
 
@@ -182,6 +224,7 @@ nav{
     height: 100vh;
     position: relative;
     padding-top: 30vh;
+    pointer-events: all;
 
     .div1{
         height: 60%;
@@ -342,7 +385,6 @@ nav{
 }
 
 #servicios{
-    background-color: $bg-dark;
     height: 100vh;
     padding-top: 15vh;
     .title{
@@ -352,6 +394,7 @@ nav{
     }
     
     div{
+        pointer-events: all;
         display: flex;
         .webDev_frontEnd{
             margin: 20px;
@@ -488,12 +531,12 @@ nav{
 }
 
 #contacto{
-    background-color: $bg-dark;
     height: 100vh;
     padding-top: 10vh;
     position: relative;
 
     div {
+        
         width: 80%;
         position: absolute;
         top: 50%;
@@ -503,18 +546,21 @@ nav{
         padding: 0 2rem 5rem 2rem;
         
         h1 {
+            pointer-events: all;
             color: $f-green;
             font-size: 3rem;
             padding: 2rem;
         }
         
         p {
+            pointer-events: all;
             color: $f-light;
             font-size: 1.2rem;
         }
     }
 
     button {
+        pointer-events: all;
         margin-top: 10vh;
         padding: 1rem;
         font-size: 2rem;
