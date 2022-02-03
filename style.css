@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  background-color: #0a192f;
+  font-family: "Sen", sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+nav h1 a:visited, nav h1 a:link {
+  color: #64ffda;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul a:link, nav ul a:visited {
+  color: #64ffda;
+  text-decoration: none;
+  padding: 1rem 1rem 0.5rem;
+  font-size: 0.9rem;
+  transition: all 250ms ease-in-out;
+  z-index: 100;
+}
+nav ul a:active, nav ul a:hover, nav ul:focus {
+  border-bottom: 3px solid r gba(#64ffda, 0.6);
+}
+nav ul a.active {
+  border-bottom: 3px solid #64ffda;
+}
+
+#acerca_de {
+  height: 100vh;
+}
+#acerca_de .content__main {
+  color: #8892B0;
+}
+#acerca_de .content__main span {
+  color: #64ffda;
+}
+#acerca_de .content__main h1 {
+  color: #CCD6F6;
+}
+#proyectos {
+  background-color: white;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

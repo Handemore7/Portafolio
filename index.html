@@ -1,30 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    
-    <div id="fullpage">
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-    </div>
+    <nav>
+        <h1><a href="/">Portafolio</a></h1>
+        <ul>
+            <li><a href="#acerca_de"  data-serction="acerca_de" class="nav-links">Acerca de</a></li>
+            <li><a href="#proyectos"  data-serction="proyectos" class="nav-links">Proyectos</a></li>
+            <li><a href="#servicios"  data-serction="servicios" class="nav-links">Servicios</a></li>
+            <li><a href="#contacto"  data-serction="contacto" class="nav-links">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="acerca_de">
+            <div class="content__main">
+                <span>Hola! Mi nombre es</span>
+                <h1>Carlos Andres Ramirez</h1>
+                <h2>Desarrollo aplicaciones web</h2>
+                <p>Soy un estudiante de diseño de medios interactivos, gracias a lo cual tengo conocimientos sobre distintos aspectos de los medios, desde lo visual como UI, hasta lo que no se ve en los proyectos, UX, desarrollo. Actualmente me estoy enfocando a desarrollo de "aplicaciones inteligentes" con el uso de Data science.</p>
+                <button>ª</button>
+            </div>
+        </section>
+        <section id="proyectos">
+
+        </section>
+        <section id="servicios">
+
+        </section>
+        <section id="contacto">
+
+        </section>
+    </main>
 
 </body>
-
-<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
-<script src="vendors/easings.min.js"></script>
-
-
-<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-
-<script type="text/javascript" src="fullpage.js"></script>
 </html>

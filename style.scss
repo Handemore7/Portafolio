@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+$f-light: #CCD6F6;
+$f-dark: #8892B0;
+$f-green: #64ffda;
+
+//functional variables
+
+$transitionAll: all 250ms ease-in-out;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    background-color: #0a192f;
+    font-family: 'Sen', sans-serif;
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        font-size: 2rem;
+        padding: 1rem;
+        
+        a:visited, a:link{
+            color: $f-green;
+            text-decoration: none;
+        }
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+
+        a:link, a:visited {
+            color: $f-green;
+            text-decoration: none;
+            padding: 1rem 1rem .5rem;
+            font-size: .9rem;
+            transition: $transitionAll;
+            z-index: 100;
+        }
+    
+        a:active, a:hover, &:focus{
+            border-bottom: 3px solid r gba($f-green, .6);
+        }
+    
+        a.active{
+            border-bottom: 3px solid $f-green;
+        }        
+    }
+}
+
+#acerca_de{
+    height: 100vh;
+    .content__main {
+        color: $f-dark;
+        span {
+            color: $f-green;
+        }
+        h1 {
+            color: $f-light;
+        }
+        h2 {
+    
+        }
+        p {
+    
+        }
+    }
+}
+
+#proyectos{
+    background-color: white;
+    height: 100vh;
+}
+
+#servicios{
+
+}
+
+#contacto{
+
+}
