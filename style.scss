@@ -3,6 +3,7 @@
 $f-light: #CCD6F6;
 $f-dark: #8892B0;
 $f-green: #64ffda;
+$bg-dark: #0a192f;
 
 //functional variables
 
@@ -14,8 +15,66 @@ $transitionAll: all 250ms ease-in-out;
     border: 0;
     font-size: 100%;
     box-sizing: border-box;
-    background-color: #0a192f;
     font-family: 'Sen', sans-serif;
+}
+
+body, html {
+    background-color: $bg-dark;
+    scroll-behavior: smooth;
+}
+
+.navbutton-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    pointer-events: none;
+
+    .navbutton-grid{
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        grid-gap: 1rem;
+
+        .navbutton{
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 2px solid $f-green;
+            border-radius: 100%; 
+            pointer-events: all;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: 3px;
+                border-radius: 100%;
+                background-color: transparent;
+                transition: $transitionAll;
+            }
+
+            &:hover{
+                &::after {
+                    background-color: $f-green;
+                }
+            }
+
+            &:focus, &.active{
+                &::after{
+                    background-color: $f-light;
+                }
+            }
+        }
+    }
 }
 
 nav{
@@ -27,13 +86,33 @@ nav{
     justify-content: space-between;
     align-items: center;
 
+    .nav_links {
+        &:link, &:visited {
+            transition: $transitionAll;
+            color: $f-green;
+            text-decoration: none;
+            padding: 1rem 1rem .5rem;
+            z-index: 100;
+        }
+    
+        &:active, &:hover, &:focus{
+            border-bottom: 3px solid rgba($f-green, .6);
+        }
+    
+        &.active{
+            border-bottom: 3px solid $f-green;
+        }       
+        &:visited, &:link{
+            color: $f-green;
+            text-decoration: none;
+        } 
+    }
+
     h1{
         font-size: 2rem;
         padding: 1rem;
-        
-        a:visited, a:link{
-            color: $f-green;
-            text-decoration: none;
+        a {
+            font-size: 2rem;
         }
     }
     
@@ -41,41 +120,61 @@ nav{
         display: flex;
         list-style: none;
 
-        a:link, a:visited {
-            color: $f-green;
-            text-decoration: none;
-            padding: 1rem 1rem .5rem;
-            font-size: .9rem;
-            transition: $transitionAll;
-            z-index: 100;
-        }
-    
-        a:active, a:hover, &:focus{
-            border-bottom: 3px solid r gba($f-green, .6);
-        }
-    
-        a.active{
-            border-bottom: 3px solid $f-green;
-        }        
+        
     }
 }
 
+.main_content{
+    position: absolute;
+    background-color: $bg-dark;
+    padding: 5vw 12vw 0 12vw;
+}
+
 #acerca_de{
+    padding-top: 20vh;
     height: 100vh;
     .content__main {
         color: $f-dark;
         span {
             color: $f-green;
+            font-size: 1.2rem;
         }
         h1 {
             color: $f-light;
+            font-size: 4rem;
         }
         h2 {
-    
+            font-size: 2rem;
         }
         p {
-    
+            display: inline-flex;
+            font-size: 1rem;
+            width: 50%;
         }
+    }
+    .content_img{
+        width: 30vw;
+        display: flex;
+        position: absolute;
+        right: 10vw;
+        transform: translateY(-50%);
+        
+        img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    button{
+        margin-top: 10vh;
+        padding: 1rem;
+        font-size: 2rem;
+        color: $f-green;
+        border-color: $f-green;
+        border: 1px solid $f-green;
+        background-color: transparent;
+        border-radius: 1vw;
     }
 }
 
@@ -85,9 +184,11 @@ nav{
 }
 
 #servicios{
-
+    background-color: green;
+    height: 100vh;
 }
 
 #contacto{
-
+    background-color: blue;
+    height: 100vh;
 }
