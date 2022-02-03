@@ -151,16 +151,304 @@ nav ul {
 }
 
 #proyectos {
-  background-color: white;
   height: 100vh;
+  position: relative;
+  padding-top: 30vh;
+}
+#proyectos .div1 {
+  height: 60%;
+  border-radius: 10px;
+  background-color: #49305a;
+  width: 30%;
+  position: absolute;
+  text-align: center;
+}
+#proyectos .div1 .qentaz_img {
+  border-radius: 100%;
+  transform: translateY(-50%);
+  padding: 2rem;
+  background-color: white;
+  display: inline-block;
+}
+#proyectos .div1 .qentaz_img img {
+  width: 100px;
+  height: 100px;
+}
+#proyectos .div1 .qentaz_content {
+  transform: translateY(-30%);
+  padding: 1rem;
+  position: relative;
+}
+#proyectos .div1 .qentaz_content h1 {
+  font-size: 3rem;
+  color: #64ffda;
+}
+#proyectos .div1 .qentaz_content p {
+  color: #CCD6F6;
+  text-align: left;
+  font-size: 0.9rem;
+}
+#proyectos .div1 .qentaz_content a {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  transform: translateY(50%);
+  font-size: 0.8rem;
+  color: #64ffda;
+  text-decoration: none;
+}
+#proyectos .div2 {
+  height: 60%;
+  border-radius: 10px;
+  background-color: #49305a;
+  width: 30%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+}
+#proyectos .div2 .qentaz_img {
+  transform: translateY(-50%);
+  padding: 2rem;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+}
+#proyectos .div2 .qentaz_img img {
+  width: 100px;
+  height: 100px;
+}
+#proyectos .div2 .qentaz_content {
+  transform: translateY(-30%);
+  padding: 1rem;
+  position: relative;
+}
+#proyectos .div2 .qentaz_content h1 {
+  font-size: 3rem;
+  color: #64ffda;
+}
+#proyectos .div2 .qentaz_content p {
+  color: #CCD6F6;
+  text-align: left;
+  font-size: 0.9rem;
+}
+#proyectos .div2 .qentaz_content a {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  transform: translateY(230%);
+  font-size: 0.8rem;
+  color: #64ffda;
+  text-decoration: none;
+}
+#proyectos .div3 {
+  border-radius: 10px;
+  background-color: #49305a;
+  width: 30%;
+  height: 60%;
+  position: absolute;
+  text-align: center;
+  right: 0;
+}
+#proyectos .div3 .qentaz_img {
+  transform: translateY(-50%);
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+}
+#proyectos .div3 .qentaz_img img {
+  width: 140px;
+  height: 100px;
+}
+#proyectos .div3 .qentaz_content {
+  transform: translateY(-30%);
+  padding: 1rem;
+  position: relative;
+}
+#proyectos .div3 .qentaz_content h1 {
+  font-size: 3rem;
+  color: #64ffda;
+}
+#proyectos .div3 .qentaz_content p {
+  color: #CCD6F6;
+  text-align: left;
+  font-size: 0.9rem;
+}
+#proyectos .div3 .qentaz_content a {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  transform: translateY(500%);
+  font-size: 0.8rem;
+  color: #64ffda;
+  text-decoration: none;
 }
 
 #servicios {
-  background-color: green;
+  background-color: #0a192f;
   height: 100vh;
+  padding-top: 15vh;
+}
+#servicios .title {
+  font-size: 2.5rem;
+  color: #64ffda;
+  text-align: center;
+}
+#servicios div {
+  display: flex;
+}
+#servicios div .webDev_frontEnd {
+  margin: 20px;
+  flex-direction: column;
+  background-color: #8892B0;
+  width: 30%;
+  padding: 1rem 1rem;
+  border-top: 3px solid yellow;
+}
+#servicios div .webDev_frontEnd span {
+  color: yellow;
+}
+#servicios div .webDev_frontEnd h1 {
+  font-size: 2rem;
+  margin: 0.7rem 0;
+}
+#servicios div .webDev_frontEnd p {
+  font-size: 0.9rem;
+}
+#servicios div .webDev_backEnd {
+  margin: 20px;
+  flex-direction: column;
+  background-color: #8892B0;
+  width: 30%;
+  padding: 1rem 1rem;
+  border-top: 3px solid yellow;
+}
+#servicios div .webDev_backEnd span {
+  color: yellow;
+}
+#servicios div .webDev_backEnd h1 {
+  font-size: 2rem;
+  margin: 0.7rem 0;
+}
+#servicios div .webDev_backEnd p {
+  font-size: 0.9rem;
+}
+#servicios div .invest_Data {
+  margin: 20px;
+  flex-direction: column;
+  background-color: #8892B0;
+  width: 30%;
+  padding: 1rem 1rem;
+  border-top: 3px solid #e02b2b;
+}
+#servicios div .invest_Data span {
+  color: #e02b2b;
+}
+#servicios div .invest_Data h1 {
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+#servicios div .invest_Data p {
+  font-size: 0.9rem;
+}
+#servicios div .invest_UX {
+  margin: 20px;
+  flex-direction: column;
+  background-color: #8892B0;
+  width: 30%;
+  padding: 1rem 1rem;
+  border-top: 3px solid #e02b2b;
+}
+#servicios div .invest_UX span {
+  color: #e02b2b;
+}
+#servicios div .invest_UX h1 {
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+#servicios div .invest_UX p {
+  font-size: 0.9rem;
+}
+#servicios div .Dise_UI {
+  margin: 20px;
+  flex-direction: column;
+  background-color: #8892B0;
+  width: 30%;
+  padding: 1rem 1rem;
+  border-top: 3px solid #5debf5;
+}
+#servicios div .Dise_UI span {
+  color: #5debf5;
+}
+#servicios div .Dise_UI h1 {
+  font-size: 1.9rem;
+  margin: 0.7rem 0;
+}
+#servicios div .Dise_UI p {
+  font-size: 0.9rem;
+}
+#servicios div .Dise_video {
+  margin: 20px;
+  flex-direction: column;
+  background-color: #8892B0;
+  width: 30%;
+  padding: 1rem 1rem;
+  border-top: 3px solid #5debf5;
+}
+#servicios div .Dise_video span {
+  color: #5debf5;
+}
+#servicios div .Dise_video h1 {
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+}
+#servicios div .Dise_video p {
+  font-size: 0.9rem;
 }
 
 #contacto {
-  background-color: blue;
+  background-color: #0a192f;
   height: 100vh;
+  padding-top: 10vh;
+  position: relative;
+}
+#contacto div {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 2rem 5rem 2rem;
+}
+#contacto div h1 {
+  color: #64ffda;
+  font-size: 3rem;
+  padding: 2rem;
+}
+#contacto div p {
+  color: #CCD6F6;
+  font-size: 1.2rem;
+}
+#contacto button {
+  margin-top: 10vh;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #64ffda;
+  border-color: #64ffda;
+  border: 1px solid #64ffda;
+  background-color: transparent;
+  border-radius: 1vw;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  transition: all 250ms ease-in-out;
+}
+#contacto button:hover {
+  transition: all 250ms ease-in-out;
+  background-color: #2A4771;
+  color: #64ffda;
 }/*# sourceMappingURL=style.css.map */
