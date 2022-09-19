@@ -226,6 +226,8 @@ nav{
     padding-top: 30vh;
     pointer-events: all;
     overflow-x: auto;
+    overflow-y: hidden
+    ;
     
 
     .div1{
@@ -454,12 +456,12 @@ nav{
 
             img{
                 width: 140px;
-                height: 100px;
+                height: 140px;
             }
         }
 
         .qentaz_content{
-            transform: translateY(-30%);
+            transform: translateY(-50%);
             padding: 1rem;
             position: relative;
             
@@ -538,6 +540,57 @@ nav{
         }
     }
     .div7{
+        border-radius: 10px;
+        background-color: #49305a;
+        width: 30%;
+        height: 60%;
+        position: absolute;
+        text-align: center;
+        right: -104vw;
+        
+        .qentaz_img{
+            
+            transform: translateY(-50%);
+            padding: 1.5rem;
+            background-color: #F6F6F7;
+            border-radius: 100%;
+            display: inline-block;
+
+            img{
+                width: 140px;
+                height: 100px;
+            }
+        }
+
+        .qentaz_content{
+            transform: translateY(-30%);
+            padding: 1rem;
+            position: relative;
+            
+            h1{
+                font-size: 3rem;
+                color: $f-green;
+            }
+
+            p{
+                
+                color: $f-light;
+                text-align: left;
+                font-size: .9rem;
+            }
+
+            a{
+                position: absolute;
+                left: 1rem;
+                bottom: 0;
+                transform: translateY(500%);
+                font-size: .8rem;
+                color: $f-green;
+                text-decoration: none;
+            }
+        }
+    }
+    .div8{
         border-radius: 10px;
         background-color: #49305a;
         width: 30%;

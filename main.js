@@ -83,3 +83,7 @@ window.addEventListener('keydown', (key) => {
         keyEventHandler(key.code);
     }
 })
+
+document.getElementById('hola').addEventListener('click', ()=>{
+    window.open('mailto:handemore7@gmail.com');
+})
